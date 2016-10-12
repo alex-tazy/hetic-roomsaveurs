@@ -1,3 +1,64 @@
+.modelivraison{
+padding-left:1%;
+    color:#0c002f;
+}
+
+.titreadomicile{
+color:#0c002f;
+}
+
+.fieldsetcenter{
+    border-left: 1px solid #0c002f;
+    height: 100%;
+    padding-left: 5%; 
+        padding-top: 2%;
+}
+
+.textepointrelais{
+padding-top:20px;
+}
+
+.livraison input placeholder{
+    color:#0c002f;
+    padding-left:4%;
+}
+
+.livraison input{
+    padding: 0.8%;
+    width: 80%;
+    margin: 2%;
+    margin-left: 0;
+}
+
+.inputstylise input{
+border:1px solid #fff02a;
+    padding:2%
+}
+
+.livraison input:last-child{
+    width: 50%;
+    background-color: #fff02a;
+    margin-top: 40px;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 2%;
+    font-weight: bold;
+    color: #0c002f;
+    border: 0;
+}
+
+
+.submitadresse{
+background-color: #fff02a;
+    margin-top: 40px;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 2%;
+    font-weight: bold;
+    color:#0c002f;
+    border: 0;   
+}
+
 main#cart {
     padding: 50px 0;
 
@@ -147,6 +208,35 @@ main#cart {
 }
        .supprimer {
     top:20px;
+}
+}
+
+@media screen and (max-width: 768px){
+.fieldsetcenter{
+    border-top: 1px solid #0c002f;
+    border-left: none;
+    height: 100%;
+    padding-left: 0%; 
+        padding-top: 3%;
+}
+    
+    .modelivraison {
+    padding-left: 0%;
+    color: #0c002f;
+    text-align: center;
+}
+    
+    .titreadomicile {
+    text-align: center;
+}
+    
+    .livraison{
+    text-align:center;
+            padding-bottom: 4%;
+    }
+    
+    .fieldsetcenter {
+    text-align: center;
 }
 }
 
