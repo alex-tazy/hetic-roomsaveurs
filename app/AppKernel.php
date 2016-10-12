@@ -19,7 +19,7 @@ class AppKernel extends Kernel
             new HETIC\AppBundle\HETICAppBundle(),
             new HETIC\UserBundle\HETICUserBundle(),
             new FOS\UserBundle\FOSUserBundle(),
-            new Vich\UploaderBundle\VichUploaderBundle(),
+            // new Vich\UploaderBundle\VichUploaderBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {

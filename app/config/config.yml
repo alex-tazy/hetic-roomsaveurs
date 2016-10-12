@@ -74,13 +74,13 @@ fos_user:
     user_class: HETIC\UserBundle\Entity\User
 
 # VichUploader Configuration
-vich_uploader:
-    db_driver: orm
-
-    mappings:
-        user_profile:
-            uri_prefix:         /uploads
-            upload_destination: %kernel.root_dir%/web/uploads
-            directory_namer:    vich_uploader.directory_namer
-            namer:              vich_uploader.namer_uniqid
-            inject_on_load:     true
+# vich_uploader:
+#     db_driver: orm
+#
+#     mappings:
+#         user_profile:
+#             uri_prefix:         /uploads
+#             upload_destination: %kernel.root_dir%/web/uploads
+#             directory_namer:    vich_uploader.directory_namer
+#             namer:              vich_uploader.namer_uniqid
+#             inject_on_load:     true
