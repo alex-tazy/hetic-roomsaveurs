@@ -63,10 +63,10 @@ margin-right: 2%;
 .col-right{
 margin-left: 2%;
 }
-.timeline{
-background: orange;
+.timeline-block{
+background: #0c002f;
 height: 150px;
-padding: 50px;
+padding: 5%;
 }
 .footer{
 text-align: center;
@@ -88,4 +88,49 @@ appearance: none;
 padding: 8px 20px;
 background: none;
 margin: 2px 8px;
+}
+.timeline {
+list-style-type: none;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.status {
+padding: 0px 50px;
+display: flex;
+justify-content: center;
+border-top: 1px solid #D6DCE0;
+position: relative;
+}
+.status h4 {
+font-weight: 600;
+color: #fff;
+}
+.status:before {
+content: "";
+width: 12px;
+height: 12px;
+background-color: #e0cf00;
+box-shadow: 0 0 20px #e0cf00;
+border-radius: 25px;
+position: absolute;
+top: -6px;
+left: 42%;
+}
+
+@media (min-device-width: 320px) and (max-device-width: 700px) {
+.timeline {
+display: block;
+}
+
+.li {
+display: flex;
+width: inherit;
+}
+
+.status:before {
+left: -8%;
+top: 30%;
+}
 }
