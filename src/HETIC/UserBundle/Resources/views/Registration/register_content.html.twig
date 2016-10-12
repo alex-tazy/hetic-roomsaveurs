@@ -1,8 +1,37 @@
 {% trans_default_domain 'FOSUserBundle' %}
 
-{{ form_start(form, {'method': 'post', 'action': path('fos_user_registration_register'), 'attr': {'class': 'fos_user_registration_register'}}) }}
-    {{ form_widget(form) }}
-    <div>
-        <input type="submit" value="{{ 'registration.submit'|trans }}" />
+<section>
+	<div class="container">
+		<div class="row">
+		{% if error %}
+                <div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+            {% endif %}
+            <div class="col-md-6 pull-right">
+                <h1>Inscription à Room Saveur</h1>
+                <form action="{{ path("fos_user_security_check") }}" method="post">
+                    <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
+
+                    <label for="username">{{ 'security.registration.username'|trans }}</label>
+                    <input type="text" id="username" name="_username" placeholder="Nom d'utilisateur" required="required" />
+
+                    <label for="email">{{ 'security.registration.email'|trans }}</label>
+                    <input type="email" id="email" name="_email" placeholder="E-mail" required="required" />
+
+                    <label for="password">{{ 'security.registration.password'|trans }}</label>
+                    <input type="password" id="password" name="_password" placeholder="Mot de passe" required="required" />
+
+                    <label for="confirm_password">{{ 'security.registration.confirmPassword'|trans }}</label>
+                    <input type="password" id="confirm_password" name="_confirmPassword" placeholder="Configuration du mot de passe" required="required" />
+
+                    <label for="entreprise">{{ 'security.registration.entreprise'|trans }}</label>
+                    <input type="text" id="entreprise" name="_entreprise" placeholder="Entreprise"/>
+
+                    <label for="tel">{{ 'security.registration.tel'|trans }}</label>
+                    <input type="tel" id="tel" name="_tel" placeholder="Téléphone" required="required" />
+
+                    <input type="submit" id="_submit" name="_submit" value="{{ 'security.registration.submit'|trans }}" />
+                </form>
+            </div>
+        </div>
     </div>
-{{ form_end(form) }}
+</section>
