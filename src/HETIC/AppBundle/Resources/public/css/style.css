@@ -5815,7 +5815,7 @@ html, body {
   font-size: "Gotham Book", sans-serif; }
 
 header {
-  background: #0c002f;
+  background: black;
   padding: 20px 0; }
   header img {
     height: 75px;
@@ -5823,7 +5823,7 @@ header {
 
 footer {
   padding: 10px 0;
-  background: #0c002f; }
+  background: black; }
   footer .row {
     margin: 30px auto; }
     footer .row a {
@@ -5837,7 +5837,7 @@ footer {
       text-align: center; }
       footer .row nav ul li {
         display: inline-block;
-        margin-right: 50px; }
+        margin-right: 20px; }
         footer .row nav ul li a {
           color: #FFF; }
           footer .row nav ul li a:hover {
@@ -5846,22 +5846,35 @@ footer {
           color: #FFF;
           font-size: 2em; }
 
-menu_horizontal {
-  display: inline-block; }
-  menu_horizontal li {
+#menu_horizontal {
+  display: inline-block;
+  display: inline-block;
+  /* padding-left: 0; */
+  float: right;
+  padding-top: 3%; }
+  #menu_horizontal li {
     display: inline-block;
     color: white;
-    font-size: 1.5em;
     padding: 2%;
     list-style: none; }
-  menu_horizontal a {
+  #menu_horizontal a {
     display: inline-block;
     color: white;
     text-decoration: none; }
 
+.icone-footer {
+  width: 70%;
+  display: inline-block; }
+
+.burger {
+  display: inline-block;
+  /* width: 20%; */
+  width: 34px;
+  height: 34px; }
+
 header.home-header {
   height: 100%;
-  background: black;
+  background-color: black;
   background-size: cover;
   background-position: center;
   position: relative; }

@@ -1,9 +1,13 @@
-menu_horizontal{
+#menu_horizontal{
 display:inline-block;
+    display: inline-block;
+    /* padding-left: 0; */
+    float: right;
+    padding-top: 3%;
     li{
     display:inline-block;
         color:white;
-        font-size:1.5em;
+
         padding:2%;
         list-style: none;
     }
@@ -14,9 +18,21 @@ display:inline-block;
     }
 }
 
+.icone-footer{
+    width: 70%;
+    display:inline-block;
+}
+
+.burger{
+    display: inline-block;
+    /* width: 20%; */
+    width: 34px;
+    height: 34px;
+}
+
 header.home-header {
     height: 100%;
-    background: black;
+    background-color: black;
     background-size: cover;
     background-position: center;
     position: relative;

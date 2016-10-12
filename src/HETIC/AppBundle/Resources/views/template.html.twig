@@ -1,40 +1,31 @@
-{% extends 'HETICAppBundle::layout.html.twig' %}
-
-{% block template %}
-
-    {% if app.request.hasPreviousSession %}
-        {% for type, messages in app.session.flashbag.all() %}
-            {% for message in messages %}
-                <div class="flash-{{ type }}">
-                    {{ message }}
-                </div>
-            {% endfor %}
-        {% endfor %}
-    {% endif %}
-
-{% block header %}
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
+{% extends 'HETICAppBundle::layout.html.twig' %} {% block template %} {% if app.request.hasPreviousSession %} {% for type, messages in app.session.flashbag.all() %} {% for message in messages %}
+<div class="flash-{{ type }}">
+    {{ message }}
+</div>
+{% endfor %} {% endfor %} {% endif %} {% block header %}
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="col-md-6">
                     <a href="{{path('hetic_app_homepage')}}">
                         <img src="{{asset('bundles/heticapp/img/logo_RS.png')}}" alt="logo_header" class="logo">
                     </a>
-<ul id="menu_horizontal">
-<li class="bouton_gauche"><a href="#">Accueil</a></li>
-<li class="bouton_gauche"><a href="#">Notre Concept</a></li>
-<li class="bouton_gauche"><a href="#">Mon Panier</a></li>
-<li class="bouton_droite"><a href="#">Connexion</a></li>
-<li class="bouton_droite"><a href="#">Deconnexion</a></li>
-</ul>
+                </div>
+                <div class="col-md-6">
+                    <ul id="menu_horizontal">
+                        <li class="bouton_gauche"><a href="#">Mon compte</a></li>
+                        <li class="bouton_gauche"><a href="#">Panier</a></li></li>
+                        <li class="bouton_gauche"><a href="#">Deconnexion</a></li>
+                                                <li class="bouton_gauche"><a href="#">Inscription</a></li>
+ <img src="{{asset('bundles/heticapp/img/burger.png')}}" alt="menuburger_header" class="burger">
+                    </ul>
                 </div>
             </div>
         </div>
-    </header>
-{% endblock header %}
-
-{% block main %}
-{% endblock main %}
+    </div>
+</header>
+{% endblock header %} {% block main %} {% endblock main %}
 
 <footer>
     <div class="container">
@@ -49,7 +40,7 @@
             <div class="col-sm-12">
                 <nav>
                     <ul>
-                        <li><a href="#">Notre Concept</a></li>   
+                        <li><a href="#">Notre philosophie</a></li>
                         <li><a href="#">Contact</a></li>
                         <li><a href="#">Mentions légales</a></li>
                     </ul>
@@ -60,9 +51,17 @@
             <div class="col-sm-12">
                 <nav class="socials">
                     <ul>
+                        <li class="iconemarque"> <img src="{{asset('bundles/heticapp/img/marque-fauchon.png')}}" alt="icone_footer" class="icone-footer"></li>
+                       <li class="iconemarque"> <img src="{{asset('bundles/heticapp/img/bulle_roberta_75x75.png')}}" alt="icone_footer" class="icone-footer"></li>
+                        <li class="iconemarque"> <img src="{{asset('bundles/heticapp/img/boco_bulle.png')}}" alt="icone_footer" class="icone-footer"></li>
+                        <li class="iconemarque"> <img src="{{asset('bundles/heticapp/img/bulle_flo_bronze_1.png')}}" alt="icone_footer" class="icone-footer"></li>
                         <li><i class="fa fa-facebook"></i></li>
                         <li><i class="fa fa-instagram"></i></li>
                         <li><i class="fa fa-twitter"></i></li>
+                        <li class="iconemarque"> <img src="{{asset('bundles/heticapp/img/bulle_pleine_nature_new2.png')}}" alt="icone_footer" class="icone-footer"></li>
+                       <li class="iconemarque"> <img src="{{asset('bundles/heticapp/img/destination_logo_bulle_1.png')}}" alt="icone_footer" class="icone-footer"></li>
+                        <li class="iconemarque"> <img src="{{asset('bundles/heticapp/img/new-logo-pause-dejeuner-2016-pastille.png')}}" alt="icone_footer" class="icone-footer"></li>
+                        <li class="iconemarque"> <img src="{{asset('bundles/heticapp/img/marque-mezaliza.png')}}" alt="icone_footer" class="icone-footer"></li>
                     </ul>
                 </nav>
             </div>
