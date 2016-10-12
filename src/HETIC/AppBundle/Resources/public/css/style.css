@@ -5809,5 +5809,63 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
-main {
-  background: red; }
+header {
+  background: #0c002f;
+  padding: 20px 0; }
+  header img {
+    height: 75px;
+    width: 75px; }
+
+footer {
+  padding: 10px 0;
+  background: #0c002f; }
+  footer .row {
+    margin: 30px auto; }
+    footer .row .logo {
+      margin: 0 auto;
+      display: block;
+      width: 75px;
+      height: 75px; }
+    footer .row nav {
+      text-align: center; }
+      footer .row nav ul li {
+        display: inline-block;
+        margin-right: 50px; }
+        footer .row nav ul li a {
+          color: #FFF; }
+          footer .row nav ul li a:hover {
+            text-decoration: none; }
+        footer .row nav ul li i {
+          color: #FFF;
+          font-size: 2em; }
+
+main#login {
+  background-image: url("../img/poivron-vert.jpeg");
+  background-position: -40% center;
+  background-repeat: no-repeat;
+  background-size: 70%;
+  padding: 100px 0; }
+  main#login h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em; }
+  main#login form label {
+    display: none; }
+  main#login form input {
+    display: block;
+    padding: 15px 15px;
+    margin: 20px 0;
+    width: 100%;
+    float: right; }
+  main#login form a {
+    color: #0c002f;
+    text-align: right;
+    display: block;
+    clear: both; }
+  main#login form input[type="submit"] {
+    background: #0c002f;
+    border-radius: 5px;
+    color: #FFF;
+    border: none;
+    width: auto;
+    margin-top: 40px; }

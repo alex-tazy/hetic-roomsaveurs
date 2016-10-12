@@ -1,0 +1,32 @@
+footer {
+    padding: 10px 0;
+    background: #0c002f;
+    .row {
+        margin: 30px auto;
+        .logo {
+            margin: 0 auto;
+            display: block;
+            width: 75px;
+            height: 75px;
+        }
+        nav {
+            text-align: center;
+            ul {
+                li {
+                    display: inline-block;
+                    margin-right: 50px;
+                    a {
+                        color: #FFF;
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
+                    i {
+                        color: #FFF;
+                        font-size: 2em;
+                    }
+                }
+            }
+        }
+    }
+}
