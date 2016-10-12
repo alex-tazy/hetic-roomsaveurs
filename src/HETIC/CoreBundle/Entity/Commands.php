@@ -48,7 +48,7 @@ class Commands
     private $user;
 
     /**
-     * @ORM\ManyToOne(targetEntity="Products", cascade={"persist"})
+     * @ORM\ManyToMany(targetEntity="Products", mappedBy="commands", cascade={"persist"})
      */
     private $products;
 

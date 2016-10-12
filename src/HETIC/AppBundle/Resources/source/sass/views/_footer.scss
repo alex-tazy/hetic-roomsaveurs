@@ -3,11 +3,14 @@ footer {
     background: #0c002f;
     .row {
         margin: 30px auto;
-        .logo {
-            margin: 0 auto;
+        a {
             display: block;
-            width: 75px;
-            height: 75px;
+            text-align: center;
+            .logo {
+                display: inline-block;
+                width: 75px;
+                height: 75px;
+            }
         }
         nav {
             text-align: center;

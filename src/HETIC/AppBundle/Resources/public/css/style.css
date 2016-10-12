@@ -5809,6 +5809,11 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+html, body {
+  width: 100%;
+  height: 100%;
+  font-size: "Gotham Book", sans-serif; }
+
 header {
   background: #0c002f;
   padding: 20px 0; }
@@ -5821,11 +5826,13 @@ footer {
   background: #0c002f; }
   footer .row {
     margin: 30px auto; }
-    footer .row .logo {
-      margin: 0 auto;
+    footer .row a {
       display: block;
-      width: 75px;
-      height: 75px; }
+      text-align: center; }
+      footer .row a .logo {
+        display: inline-block;
+        width: 75px;
+        height: 75px; }
     footer .row nav {
       text-align: center; }
       footer .row nav ul li {
@@ -5838,6 +5845,141 @@ footer {
         footer .row nav ul li i {
           color: #FFF;
           font-size: 2em; }
+
+header.home-header {
+  height: 100%;
+  background: black;
+  background-size: cover;
+  background-position: center;
+  position: relative; }
+  header.home-header .logo-header {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 100px;
+    height: 100px; }
+  header.home-header p {
+    margin-bottom: 40px; }
+  header.home-header .btn-connexion {
+    margin-left: 20px; }
+
+main#home section {
+  padding: 50px 0; }
+  main#home section.about .row {
+    padding: 50px 0; }
+    main#home section.about .row h3 {
+      font-size: 3em;
+      margin-bottom: 50px; }
+    main#home section.about .row h4 {
+      padding-left: 50px; }
+    main#home section.about .row p {
+      padding-left: 50px; }
+    main#home section.about .row .img-container {
+      position: relative; }
+  main#home section.timeline {
+    background: #0c002f;
+    height: 150px;
+    padding: 25px 0; }
+
+.choix {
+  padding: 30px; }
+
+.logo-placeholder-rond {
+  border-radius: 50%;
+  background: red;
+  width: 120px;
+  height: 120px;
+  display: inline-block; }
+
+.logo-header {
+  position: absolute;
+  top: 8%;
+  left: 8%; }
+
+.connexion {
+  text-align: right;
+  color: #fff;
+  max-width: 400px;
+  display: inline-block;
+  position: absolute;
+  top: 30%;
+  right: 10%; }
+
+.content {
+  background: #fff;
+  padding: 20px; }
+
+.img-placeholder {
+  width: 200px;
+  height: 150px;
+  background: blue; }
+
+.row-content {
+  text-align: center; }
+
+.col-content {
+  display: inline-block;
+  max-width: 45%;
+  margin: 0 auto;
+  vertical-align: middle; }
+
+.col-left {
+  margin-right: 2%; }
+
+.col-right {
+  margin-left: 2%; }
+
+.choix {
+  min-height: 75%; }
+
+h3 {
+  color: #e0cf00; }
+
+.btn-connexion {
+  border: 1px solid #fff;
+  border-radius: 3px;
+  color: #fff;
+  appearance: none;
+  -webkit-appearance: none;
+  padding: 8px 20px;
+  background: none;
+  margin: 2px 8px; }
+
+.timeline {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.status {
+  padding: 0px 50px;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid #D6DCE0;
+  position: relative; }
+
+.status h4 {
+  font-weight: 600;
+  color: #fff; }
+
+.status:before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-color: #e0cf00;
+  box-shadow: 0 0 20px #e0cf00;
+  border-radius: 25px;
+  position: absolute;
+  top: -6px;
+  left: 42%; }
+
+@media screen and (max-width: 768px) {
+  main#home section.about .row {
+    padding: 10px 0; }
+    main#home section.about .row h4 {
+      padding-left: 0px; }
+    main#home section.about .row p {
+      padding-left: 0px; } }
 
 main#login {
   background-image: url("../img/poivron-vert.jpeg");

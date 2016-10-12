@@ -12,17 +12,19 @@
         {% endfor %}
     {% endif %}
 
-<header>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <a href="{{path('hetic_app_homepage')}}">
-                    <img src="{{asset('bundles/heticapp/img/logo_RS.png')}}" alt="logo_header" class="logo">
-                </a>
+{% block header %}
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <a href="{{path('hetic_app_homepage')}}">
+                        <img src="{{asset('bundles/heticapp/img/logo_RS.png')}}" alt="logo_header" class="logo">
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
-</header>
+    </header>
+{% endblock header %}
 
 {% block main %}
 {% endblock main %}

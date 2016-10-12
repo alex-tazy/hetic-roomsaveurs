@@ -1,15 +1,53 @@
-.header{
+header.home-header {
     height: 100%;
     background: black;
+    background-size: cover;
+    background-position: center;
     position: relative;
+    .logo-header {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        width: 100px;
+        height: 100px;
+    }
+    p {
+        margin-bottom: 40px;
+    }
+    .btn-connexion {
+        margin-left: 20px;
+    }
 }
 
-.logo, .logo-header{
-    background: red;
-    width: 70px;
-    height: 70px;
-    display: inline-block;
+main#home {
+    section {
+        padding: 50px 0;
+        &.about {
+            .row {
+                padding: 50px 0;
+                h3 {
+                    font-size: 3em;
+                    margin-bottom: 50px;
+                }
+                h4 {
+                    padding-left: 50px;
+                }
+                p {
+                    padding-left: 50px;
+                }
+                .img-container {
+                    position: relative;
+                }
+            }
+        }
+        &.timeline{
+            background: #0c002f;
+            height: 150px;
+            padding: 25px 0;
+        }
+    }
 }
+
 .choix{
     padding: 30px;
 }
@@ -58,11 +96,7 @@ margin-right: 2%;
 .col-right{
 margin-left: 2%;
 }
-.timeline-block{
-background: #0c002f;
-height: 150px;
-padding: 5%;
-}
+
 .choix{
 min-height: 75%;
 }
@@ -109,18 +143,33 @@ top: -6px;
 left: 42%;
 }
 
-@media (min-device-width: 320px) and (max-device-width: 700px) {
-.timeline {
-display: block;
-}
-
-.li {
-display: flex;
-width: inherit;
-}
-
-.status:before {
-left: -8%;
-top: 30%;
+@media screen and (max-width: 768px) {
+// .timeline {
+// display: block;
+// }
+//
+// .li {
+// display: flex;
+// width: inherit;
+// }
+//
+// .status:before {
+// left: -8%;
+// top: 30%;
+// }
+main#home {
+    section {
+        &.about {
+            .row {
+                padding: 10px 0;
+                h4 {
+                    padding-left: 0px;
+                }
+                p {
+                    padding-left: 0px;
+                }
+            }
+        }
+    }
 }
 }

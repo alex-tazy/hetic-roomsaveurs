@@ -39,7 +39,7 @@ class Warehouse
     private $address;
 
     /**
-     * @ORM\OneToMany(targetEntity="Products", mappedBy="warehouse", cascade={"persist"})
+     * @ORM\ManyToMany(targetEntity="Products", mappedBy="warehouse", cascade={"persist"})
      */
     private $products;
 

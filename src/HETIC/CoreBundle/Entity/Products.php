@@ -62,7 +62,7 @@ class Products
     private $vat;
 
     /**
-     * @ORM\ManyToOne(targetEntity="Warehouse", inversedBy="products", cascade={"persist"})
+     * @ORM\ManyToMany(targetEntity="Warehouse", inversedBy="products", cascade={"persist"})
      */
     private $warehouse;
 
@@ -70,6 +70,11 @@ class Products
      * @ORM\ManyToOne(targetEntity="Quantity", inversedBy="products", cascade={"persist"})
      */
     private $quantity;
+
+    /**
+     * @ORM\ManyToMany(targetEntity="Commands", inversedBy="products", cascade={"persist"})
+     */
+    private $commands;
 
 
     /**
