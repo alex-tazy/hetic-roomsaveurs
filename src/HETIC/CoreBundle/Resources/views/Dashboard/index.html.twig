@@ -1,26 +1,26 @@
-{% extends 'HETICAppBundle::template.html.twig' %}
+{% extends 'HETICCoreBundle::template.html.twig' %}
 
 {% block main %}
 
 <div id="wrapper" class="active">
-      
+
       <!-- Sidebar -->
       <div id="sidebar-wrapper">
       <ul id="sidebar_menu" class="sidebar-nav">
            <li class="sidebar-brand"><a id="menu-toggle" href="#">Dashboard</a></li>
       </ul>
-        <ul class="sidebar-nav" id="sidebar">     
+        <ul class="sidebar-nav" id="sidebar">
           <li><a>Analytics</a></li>
           <li><a>Ventes</a></li>
         </ul>
       </div>
-          
+
       <!-- Page content -->
       <div id="page-content-wrapper">
         <!-- Keep all page content within the page-content inset div! -->
         <div class="page-content inset">
           <div class="row">
-              
+
               <table class="table table-condensed">
                 <thead>
                  <tr>
@@ -44,11 +44,11 @@
                  </tr>
                 </tbody>
               </table>
-              
+
           </div>
         </div>
       </div>
-      
+
     </div>
 
 {% endblock main %}
