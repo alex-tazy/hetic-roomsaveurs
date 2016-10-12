@@ -1,3 +1,8 @@
 hetic_app_homepage:
     path:     /
     defaults: { _controller: HETICAppBundle:Home:index }
+    
+    
+hetic_app_cart:
+    path:     /cart
+    defaults: { _controller: HETICAppBundle:Cart:index }

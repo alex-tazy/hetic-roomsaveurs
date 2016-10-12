@@ -1,0 +1,234 @@
+
+.panier {
+margin-top:5%;
+}
+
+
+.paniergauche {
+    width: 70%;
+    height: 100%;
+    background-color: white;
+    font-size: 1.2em;
+    padding-left: 5%;
+    float: left;
+    color: #0c002f;
+}
+
+.panierdroite {
+    width: 25%;
+    height: 100%;
+    background-color: white;
+    float: right;
+    margin-right: 5%;
+}
+
+.titrepanier {
+    color: #0c002f;
+    font-size: 2em;
+    font-family:"arial";
+    text-align:left;
+    font-weight:bold;
+
+}
+
+.titrepanier2 {
+    color: #0c002f;
+    font-size: 1.8em;
+    font-family:"arial";
+    text-align:left;
+    font-weight:bold;
+
+}
+
+.tableaupanier {
+    width:80%;
+    padding: 3% ;
+    
+}
+
+.imageproduct {
+    display:inline-block;
+    padding-left:0%;
+}
+
+.descriptif {
+    display:inline-block;
+        padding-left: 3%;
+        position: relative;
+    top: -15px;
+}
+
+.titregris {
+   color: #979797;
+    border-top: 1px solid #979797;
+    text-align:center;
+    
+}
+
+.list {
+    text-align:left;
+    border-top: 1px solid #979797;
+}.list2 {
+    text-align:left;
+    border-top: 1px solid #979797;
+    font-weight:bold;
+}
+
+.supprimer {
+    display:block;
+    text-align:left;
+    font-size:0.8em;
+        position: relative;
+    top: 65px;
+    color:#979797;;
+}
+
+.tableaupanier th {
+    padding: 3% ;
+    padding-top:1.5%;
+    padding-bottom:1.5%;
+        text-align: center;
+}
+
+.tableaupanier th:first-child {
+text-align:left;
+    
+}
+
+.tableaupanier td {
+    padding: 3% ;
+    font-weight:bold;
+    text-align:center;
+}
+
+.tableaupanier td:first-child  {
+    padding-left:0%!important;
+    text-align:inherit;
+}
+
+.tableaucommande2  {
+width:100%;
+    margin-top:5%;
+}
+
+.list2 td{
+padding-top:2.5%;
+    padding-bottom:2.5%;
+    font-size: 0.8em;
+}
+
+.prixtotal{
+color: #e0cf00;
+    font-size:1.8em!important;
+}
+
+.prixtotal:first-child{
+color: #0c002f;
+}
+
+.btnapply{
+    background-color: #0c002f;
+    border-radius: 8px;
+    width: 350px;
+    line-height: 40px;
+    height: 40px;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 1661px) {
+.descriptif {
+    top: 10px;
+        padding-left: 0%;
+}
+    
+    .supprimer {
+    top: 15px;
+}
+}
+
+
+@media screen and (max-width: 1300px) {
+
+.descriptif {
+    display: block;
+    padding-left: 0%;
+    position: relative;
+    top: 0px;
+    text-align: left;
+    padding-top: 2%;
+}
+    
+.btnapply {
+    width: 300px;
+}   
+    
+    .supprimer {
+    display: block;
+    text-align: left;
+    font-size: 0.8em;
+    position: relative;
+    color: #979797;
+}
+    
+}
+
+@media screen and (max-width: 1050px) {
+.panierdroite {
+    width: 90%;
+        margin-bottom: 2.5%;
+}
+    
+    .paniergauche {
+    width: 100%;
+    height: 100%;
+}
+    
+    .tableaupanier {
+        width: 90%;}
+    
+    .descriptif {
+    text-align: left;
+}
+    
+    .tableaucommande2 {
+    width: 95%;
+    margin-top: 5%;
+}
+       .supprimer {
+    top:20px;
+}
+}
+
+@media screen and (max-width: 680px){
+.paniergauche {
+    width: 100%;
+    height: 100%;
+}
+
+.tableaupanier th {
+    padding: 0%;}
+
+}
+
+@media screen and (max-width: 600px){
+.imageproduct {
+    display: inline-block;
+    padding-left: 0%;
+    /* width: 90%; */
+    width: 200px;
+}
+}
+
+@media screen and (max-width: 480px){
+.imageproduct {
+    display: inline-block;
+    padding-left: 0%;
+    /* width: 90%; */
+    width: 160px;
+}
+}
