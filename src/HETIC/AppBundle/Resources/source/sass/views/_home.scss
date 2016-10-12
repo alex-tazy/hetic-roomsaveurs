@@ -1,3 +1,19 @@
+menu_horizontal{
+display:inline-block;
+    li{
+    display:inline-block;
+        color:white;
+        font-size:1.5em;
+        padding:2%;
+        list-style: none;
+    }
+    a{
+        display:inline-block;
+        color:white;
+        text-decoration: none;
+    }
+}
+
 header.home-header {
     height: 100%;
     background: black;
@@ -27,13 +43,12 @@ main#home {
                 padding: 50px 0;
                 h3 {
                     font-size: 3em;
-                    margin-bottom: 50px;
+                    margin-bottom: 20px;
+                    font-weight:bold;
                 }
                 h4 {
-                    padding-left: 50px;
-                }
-                p {
-                    padding-left: 50px;
+                    font-weight:bold;
+                        font-size: 1.8em;
                 }
                 .img-container {
                     position: relative;
@@ -41,7 +56,7 @@ main#home {
             }
         }
         &.timeline{
-            background: #0c002f;
+            background-image: #0c002f;
             height: 150px;
             padding: 25px 0;
         }

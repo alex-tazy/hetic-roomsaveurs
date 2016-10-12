@@ -5846,6 +5846,19 @@ footer {
           color: #FFF;
           font-size: 2em; }
 
+menu_horizontal {
+  display: inline-block; }
+  menu_horizontal li {
+    display: inline-block;
+    color: white;
+    font-size: 1.5em;
+    padding: 2%;
+    list-style: none; }
+  menu_horizontal a {
+    display: inline-block;
+    color: white;
+    text-decoration: none; }
+
 header.home-header {
   height: 100%;
   background: black;
@@ -5869,15 +5882,15 @@ main#home section {
     padding: 50px 0; }
     main#home section.about .row h3 {
       font-size: 3em;
-      margin-bottom: 50px; }
+      margin-bottom: 20px;
+      font-weight: bold; }
     main#home section.about .row h4 {
-      padding-left: 50px; }
-    main#home section.about .row p {
-      padding-left: 50px; }
+      font-weight: bold;
+      font-size: 1.8em; }
     main#home section.about .row .img-container {
       position: relative; }
   main#home section.timeline {
-    background: #0c002f;
+    background-image: #0c002f;
     height: 150px;
     padding: 25px 0; }
 
@@ -6012,6 +6025,88 @@ main#login {
     width: auto;
     margin-top: 40px; }
 
+main#login {
+  background-image: url("../img/poivron-vert.jpeg");
+  background-position: -40% center;
+  background-repeat: no-repeat;
+  background-size: 70%;
+  padding: 100px 0; }
+  main#login h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em; }
+  main#login form label {
+    display: none; }
+  main#login form input {
+    display: block;
+    padding: 15px 15px;
+    margin: 20px 0;
+    width: 100%;
+    float: right; }
+  main#login form a {
+    color: #0c002f;
+    text-align: right;
+    display: block;
+    clear: both; }
+  main#login form input[type="submit"] {
+    background: #0c002f;
+    border-radius: 5px;
+    color: #FFF;
+    border: none;
+    width: auto;
+    margin-top: 40px; }
+
+.modelivraison {
+  padding-left: 1%;
+  color: #0c002f; }
+
+.titreadomicile {
+  color: #0c002f; }
+
+.fieldsetcenter {
+  border-left: 1px solid #0c002f;
+  height: 100%;
+  padding-left: 5%;
+  padding-top: 2%; }
+
+.textepointrelais {
+  padding-top: 20px; }
+
+.livraison input placeholder {
+  color: #0c002f;
+  padding-left: 4%; }
+
+.livraison input {
+  padding: 0.8%;
+  width: 80%;
+  margin: 2%;
+  margin-left: 0; }
+
+.inputstylise input {
+  border: 1px solid #fff02a;
+  padding: 2%; }
+
+.livraison input:last-child {
+  width: 50%;
+  background-color: #fff02a;
+  margin-top: 40px;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 2%;
+  font-weight: bold;
+  color: #0c002f;
+  border: 0; }
+
+.submitadresse {
+  background-color: #fff02a;
+  margin-top: 40px;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 2%;
+  font-weight: bold;
+  color: #0c002f;
+  border: 0; }
+
 main#cart {
   padding: 50px 0; }
   main#cart table {
@@ -6121,6 +6216,25 @@ main#cart {
     margin-top: 5%; }
   .supprimer {
     top: 20px; } }
+
+@media screen and (max-width: 768px) {
+  .fieldsetcenter {
+    border-top: 1px solid #0c002f;
+    border-left: none;
+    height: 100%;
+    padding-left: 0%;
+    padding-top: 3%; }
+  .modelivraison {
+    padding-left: 0%;
+    color: #0c002f;
+    text-align: center; }
+  .titreadomicile {
+    text-align: center; }
+  .livraison {
+    text-align: center;
+    padding-bottom: 4%; }
+  .fieldsetcenter {
+    text-align: center; } }
 
 @media screen and (max-width: 680px) {
   .paniergauche {
