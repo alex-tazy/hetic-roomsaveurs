@@ -8,6 +8,6 @@ class DashboardController extends Controller
 {
     public function indexAction()
     {
-        return $this->render('HETICCoreBundle:Dashboard:dashboard.html.twig');
+        return $this->render('HETICCoreBundle:Dashboard:index.html.twig');
     }
 }
