@@ -8,6 +8,6 @@ class CartController extends Controller
 {
     public function indexAction()
     {
-        return $this->render('HETICAppBundle:panier:panier.html.twig');
+        return $this->render('HETICAppBundle:Cart:cart.html.twig');
     }
 }
