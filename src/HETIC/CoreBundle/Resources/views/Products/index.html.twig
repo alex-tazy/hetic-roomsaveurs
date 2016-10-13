@@ -25,11 +25,11 @@
                            <div class="panel-body">
                                <div class="list-group">
                                     <a href="#" class="list-group-item">Code EAN 13: 3700929316301</a>
-                                    <a href="#" class="list-group-item">Prix: 29,9</a>
+                                    <a href="#" class="list-group-item">Prix: {{product.price}}€</a>
                                     <a href="#" class="list-group-item">Devise: €</a>
                                     <a href="#" class="list-group-item">TVA: 10%</a>
-                                    <a href="#" class="list-group-item">DLC: J+1 APRES FABRICATION</a>
-                                    <a href="#" class="list-group-item">Déscription: Menu HA1 FAUCHON Entrée : Velouté d'automne à la châtaigne et à la courge butternut Plat : Filet de poulet rôti au thé Lapsang Souchong, salade de crozets aux artichauts et pickles d'oignons rouges Dessert : Financier aux agrumes et crème de citron vert FAUCHON Ce plateau est livré avec : Un pain aux céréales Bleu-blanc-coeur Une gourmandise Fauchon Une bouteille Evian 33cl Un verre et un kit de couverts</a>
+                                    <a href="#" class="list-group-item">DLC: {{product.expirationDate|date('d/m/Y')}}</a>
+                                    <a href="#" class="list-group-item">Déscription: {{product.description}}</a>
                                     <div class="btn-group" role="group">
                                       <button type="button" class="btn btn-default">Modifier</button>
                                       <button type="button" class="btn btn-default">Supprimer</button>

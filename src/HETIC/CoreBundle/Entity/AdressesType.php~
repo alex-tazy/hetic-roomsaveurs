@@ -67,28 +67,4 @@ class AdressesType
     {
         return $this->name;
     }
-
-    /**
-     * Set address
-     *
-     * @param \HETIC\CoreBundle\Entity\AdressesType $address
-     *
-     * @return AdressesType
-     */
-    public function setAddress(\HETIC\CoreBundle\Entity\AdressesType $address = null)
-    {
-        $this->address = $address;
-
-        return $this;
-    }
-
-    /**
-     * Get address
-     *
-     * @return \HETIC\CoreBundle\Entity\AdressesType
-     */
-    public function getAddress()
-    {
-        return $this->address;
-    }
 }

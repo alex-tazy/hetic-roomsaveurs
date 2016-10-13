@@ -67,28 +67,4 @@ class WarehouseType
     {
         return $this->name;
     }
-
-    /**
-     * Set warehouse
-     *
-     * @param \HETIC\CoreBundle\Entity\Warehouse $warehouse
-     *
-     * @return WarehouseType
-     */
-    public function setWarehouse(\HETIC\CoreBundle\Entity\Warehouse $warehouse = null)
-    {
-        $this->warehouse = $warehouse;
-
-        return $this;
-    }
-
-    /**
-     * Get warehouse
-     *
-     * @return \HETIC\CoreBundle\Entity\Warehouse
-     */
-    public function getWarehouse()
-    {
-        return $this->warehouse;
-    }
 }

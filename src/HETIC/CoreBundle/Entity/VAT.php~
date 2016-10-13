@@ -66,28 +66,4 @@ class VAT
     {
         return $this->rate;
     }
-
-    /**
-     * Set products
-     *
-     * @param \HETIC\CoreBundle\Entity\Products $products
-     *
-     * @return VAT
-     */
-    public function setProducts(\HETIC\CoreBundle\Entity\Products $products = null)
-    {
-        $this->products = $products;
-
-        return $this;
-    }
-
-    /**
-     * Get products
-     *
-     * @return \HETIC\CoreBundle\Entity\Products
-     */
-    public function getProducts()
-    {
-        return $this->products;
-    }
 }

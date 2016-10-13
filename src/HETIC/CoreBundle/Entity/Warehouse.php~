@@ -5,12 +5,12 @@ namespace HETIC\CoreBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * WarehouseType
+ * Warehouse
  *
- * @ORM\Table(name="warehouse_type")
- * @ORM\Entity(repositoryClass="HETIC\CoreBundle\Repository\WarehouseTypeRepository")
+ * @ORM\Table(name="warehouse")
+ * @ORM\Entity(repositoryClass="HETIC\CoreBundle\Repository\WarehouseRepository")
  */
-class WarehouseType
+class Warehouse
 {
     /**
      * @var int
@@ -29,10 +29,24 @@ class WarehouseType
     private $name;
 
     /**
-     * @ORM\ManyToOne(targetEntity="Warehouse", inversedBy="type", cascade={"persist"})
+     * @ORM\OneToMany(targetEntity="WarehouseType", mappedBy="warehouse", cascade={"persist"})
      */
-    private $warehouse;
+    private $type;
 
+    /**
+     * @ORM\OneToMany(targetEntity="Adresses", mappedBy="warehouse", cascade={"persist"})
+     */
+    private $address;
+
+    /**
+     * @ORM\ManyToMany(targetEntity="Products", mappedBy="warehouse", cascade={"persist"})
+     */
+    private $products;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="Quantity", inversedBy="warehouse", cascade={"persist"})
+     */
+    private $quantity;
 
     /**
      * Get id
@@ -49,7 +63,7 @@ class WarehouseType
      *
      * @param string $name
      *
-     * @return WarehouseType
+     * @return Warehouse
      */
     public function setName($name)
     {
@@ -66,29 +80,5 @@ class WarehouseType
     public function getName()
     {
         return $this->name;
-    }
-
-    /**
-     * Set warehouse
-     *
-     * @param \HETIC\CoreBundle\Entity\Warehouse $warehouse
-     *
-     * @return WarehouseType
-     */
-    public function setWarehouse(\HETIC\CoreBundle\Entity\Warehouse $warehouse = null)
-    {
-        $this->warehouse = $warehouse;
-
-        return $this;
-    }
-
-    /**
-     * Get warehouse
-     *
-     * @return \HETIC\CoreBundle\Entity\Warehouse
-     */
-    public function getWarehouse()
-    {
-        return $this->warehouse;
     }
 }

@@ -72,4 +72,80 @@ class Quantity
     {
         return $this->number;
     }
+    /**
+     * Constructor
+     */
+    public function __construct()
+    {
+        $this->warehouse = new \Doctrine\Common\Collections\ArrayCollection();
+        $this->products = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+    /**
+     * Add warehouse
+     *
+     * @param \HETIC\CoreBundle\Entity\Warehouse $warehouse
+     *
+     * @return Quantity
+     */
+    public function addWarehouse(\HETIC\CoreBundle\Entity\Warehouse $warehouse)
+    {
+        $this->warehouse[] = $warehouse;
+
+        return $this;
+    }
+
+    /**
+     * Remove warehouse
+     *
+     * @param \HETIC\CoreBundle\Entity\Warehouse $warehouse
+     */
+    public function removeWarehouse(\HETIC\CoreBundle\Entity\Warehouse $warehouse)
+    {
+        $this->warehouse->removeElement($warehouse);
+    }
+
+    /**
+     * Get warehouse
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getWarehouse()
+    {
+        return $this->warehouse;
+    }
+
+    /**
+     * Add product
+     *
+     * @param \HETIC\CoreBundle\Entity\Products $product
+     *
+     * @return Quantity
+     */
+    public function addProduct(\HETIC\CoreBundle\Entity\Products $product)
+    {
+        $this->products[] = $product;
+
+        return $this;
+    }
+
+    /**
+     * Remove product
+     *
+     * @param \HETIC\CoreBundle\Entity\Products $product
+     */
+    public function removeProduct(\HETIC\CoreBundle\Entity\Products $product)
+    {
+        $this->products->removeElement($product);
+    }
+
+    /**
+     * Get products
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getProducts()
+    {
+        return $this->products;
+    }
 }
