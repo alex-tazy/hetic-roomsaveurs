@@ -5,16 +5,16 @@
 {% endfor %} {% endfor %} {% endif %} {% block header %}
 <header>
 
-    <div class="logo"><a href="{{path('hetic_app_homepage')}}">
-                            <img src="{{asset('bundles/heticapp/img/logo_RS.png')}}" alt="logo_footer" class="logo" style="width:65px;height:65px">
-                        </a></div>
+    <a href="{{path('hetic_app_homepage')}}">
+        <img src="{{asset('bundles/heticapp/img/logo_RS.png')}}" alt="logo_footer" class="logo" style="width:65px;height:65px">
+    </a>
     <nav class="menu">
         <span class="itemMenu itemMenu1"><a href="#">Se connecter</a></span>
         <span class="itemMenu itemMenu2"><a href="#">S'inscrire</a></span>
         <span class="itemMenu itemMenu3"><a href="#">Mon panier</a></span>
    </nav>
    <div class="burger-menu">
-        <div class="burger"></div>  
+        <div class="burger"></div>
     </div>
 </header>
 {% endblock header %} {% block main %} {% endblock main %}

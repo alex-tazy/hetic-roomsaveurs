@@ -5962,19 +5962,22 @@ footer {
   color: #fff; }
 
 .header-home {
-  margin-top: 5%;
+  margin-top: 12px;
   display: inline-flex;
   justify-content: flex-end;
   width: 100%;
   margin-bottom: 10px; }
 
-.presentation {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  margin-top: 13%;
-  padding-right: 10%; }
+.row:first-child {
+  margin-top: 30px; }
+
+.home-header-title {
+  margin-top: 200px; }
+
+.home-header-title h1 {
+  font-size: 3em;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 900; }
 
 .placeholder1 {
   background: url(../img/Croque-M.jpg);
@@ -6032,27 +6035,31 @@ footer {
   background: none;
   border: 1px solid #eb1d5d;
   margin-right: 5%;
-  transition: 0.5s; }
+  transition: 0.5s;
+  text-align: center; }
 
 .btn-connexion:hover {
   background-color: #eb1d5d;
   transition: 0.5s;
-  color: white; }
+  color: white;
+  text-decoration: none; }
 
 .btn-inscription {
   background: #eb1d5d;
   border: 1px solid #eb1d5d;
-  transition: 0.5s; }
+  transition: 0.5s;
+  text-align: center; }
 
 .btn-inscription:hover {
-  background: none;
   border: 1px solid #eb1d5d;
   color: white;
-  transition: 0.5s; }
+  transition: 0.5s;
+  text-decoration: none; }
 
 .btn-vote {
-  margin-top: 20px;
-  margin-left: 24em; }
+  margin-top: 40px;
+  float: right;
+  margin-right: 80px; }
 
 .presentation h1 {
   font-size: 3.8em; }
@@ -6071,19 +6078,18 @@ footer {
 .produits-title-selected:after {
   content: '';
   height: 1px;
-  width: 90%;
+  width: 100%;
   border: 1px solid #eb1d5d;
   display: block;
-  margin-left: -20px;
   border-radius: 2px; }
 
 .produits-subtitle-selected {
   color: #eb1d5d;
   margin-top: -30px;
   font-size: 1em;
-  margin-left: 200px;
+  margin-left: 250px;
   line-height: 1.5;
-  font-weight: bold;
+  font-weight: 300;
   max-width: 180px;
   margin-bottom: 25px; }
 
