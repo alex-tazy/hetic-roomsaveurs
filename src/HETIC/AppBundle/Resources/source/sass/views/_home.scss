@@ -82,7 +82,28 @@ margin-right: 5%;
 transition:0.5s;
 text-align: center;
 }
+.menu-random{
+padding-top: 12%;
+padding-left: 60%;
+padding-right: 8%;
+margin-bottom: 200px;
+color: white;
+}
+.block-text{
+margin: auto;
+top: -50px;
+padding-left: 20px;
+border-left: solid 5px white;
+}
 
+.prix {
+color: white;
+position: relative;
+top: 40%;
+padding-left: 35%;
+font-size: 2.5em;
+
+}
 .btn-connexion:hover{
 background-color: #eb1d5d;
 transition:0.5s;
