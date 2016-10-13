@@ -6,11 +6,14 @@ header{
 	align-items: center;
 	padding: 0 4%;
 }
-.logo{
-	width: 70px;
-	height: 70px;
-	display: inline-block;
+
+.logoheader{
+    width: 135px;
+    height: 135px;
+    display: inline-block;
+    background: url(../img/logo_RS.png);
 }
+
 header nav{
 	display: none;
 	padding: 0;
