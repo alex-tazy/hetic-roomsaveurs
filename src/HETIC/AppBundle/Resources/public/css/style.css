@@ -5844,8 +5844,11 @@ footer {
         footer .row nav ul li i {
           color: #FFF;
           font-size: 2em; }
+<<<<<<< HEAD
     footer .row hr {
       color: #444; }
+=======
+>>>>>>> 29673eae219c11be462786fe8c89c6e277fc0651
 
 main#login {
   background-image: url("../img/poivron-vert.jpeg");
@@ -5916,6 +5919,36 @@ main#login {
 .titreadomicile {
   color: #0c002f; }
 
+#output {
+  text-align: center;
+  margin-top: 8%;
+  font-weight: Bold;
+  font-size: 2em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid black; }
+
+input#timelivraison {
+  display: block;
+  background-color: #0c002f;
+  padding: 10px 0;
+  border-radius: 8px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 1.3em;
+  margin-top: 15px;
+  border: 0; }
+
+:hover {
+  text-decoration: none; }
+
+.adresselivraison {
+  width: 100%;
+  text-align: center;
+  font-style: italic; }
+
 .fieldsetcenter {
   border-left: 1px solid #0c002f;
   height: 100%;
@@ -5984,12 +6017,12 @@ main#cart {
       border-top: 1px solid #979797; }
       main#cart table .list .imageproduct {
         display: inline-block;
-        padding-left: 0%; }
+        padding-left: 0%;
+        width: 125px;
+        height: 63px; }
       main#cart table .list .descriptif {
         display: inline-block;
-        padding-left: 3%;
-        position: relative;
-        top: -15px; }
+        padding-left: 3%; }
         main#cart table .list .descriptif span a.delete {
           display: block;
           text-align: left;
@@ -6004,7 +6037,6 @@ main#cart {
           text-align: left; }
     main#cart table .list2 {
       text-align: left;
-      border-top: 1px solid #979797;
       font-weight: bold; }
       main#cart table .list2 td {
         padding: 10px 0;
@@ -6014,6 +6046,8 @@ main#cart {
         font-size: 1.8em !important; }
       main#cart table .list2 .prixtotal:first-child {
         color: #0c002f; }
+      main#cart table .list2 .list2:first-child {
+        border-bottom: 1px solid #979797; }
   main#cart a.btnapply {
     display: block;
     background-color: #0c002f;
@@ -6054,6 +6088,8 @@ main#cart {
     color: #979797; } }
 
 @media screen and (max-width: 1050px) {
+  input#timelivraison {
+    font-size: 1em; }
   .panierdroite {
     width: 90%;
     margin-bottom: 2.5%; }
@@ -6087,7 +6123,16 @@ main#cart {
     text-align: center;
     padding-bottom: 4%; }
   .fieldsetcenter {
-    text-align: center; } }
+    text-align: center; }
+  main#cart table .list .descriptif {
+    display: block;
+    top: 0px;
+    padding-left: 0%; }
+  input#timelivraison {
+    font-size: 0.8em; }
+  .formlivraison {
+    border-top: 1px solid black;
+    padding-top: 5%; } }
 
 @media screen and (max-width: 680px) {
   .paniergauche {
