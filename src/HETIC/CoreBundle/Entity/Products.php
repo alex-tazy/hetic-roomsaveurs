@@ -12,6 +12,11 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Products
 {
+
+    const STATUS_NOT_CHOOSEN = 0;
+    const STATUS_ACTIVE = 1;
+    const STATUS_CHOOSEN = 2;
+
     /**
      * @var int
      *

@@ -16,11 +16,11 @@
 
         <!-- Web Fonts  -->
 
-        <!-- Vendor CSS -->
-        <link rel="stylesheet" href="{{asset('bundles/heticcore/vendor/vendor.min.css')}}">
-
         <!-- Theme Custom CSS -->
         <link rel="stylesheet" href="{{asset('bundles/heticcore/css/style.css')}}">
+
+        <!-- Vendor CSS -->
+        <link rel="stylesheet" href="{{asset('bundles/heticcore/vendor/libraries.css')}}">
 
         {% block stylesheets %}
         {% endblock stylesheets %}
@@ -32,8 +32,8 @@
         {% block template %}
         {% endblock template %}
 
-        <script src="{{asset('bundles/heticcore/js/jquery-3.1.0.min.js')}}"></script>
-        <script src="{{asset('bundles/heticcore/vendor/vendor.min.js')}}"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="{{asset('bundles/heticcore/vendor/libraries.js')}}"></script>
 
         {% block javascripts_include %}
         {% endblock javascripts_include %}

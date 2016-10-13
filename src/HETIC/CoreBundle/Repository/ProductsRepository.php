@@ -10,4 +10,13 @@ namespace HETIC\CoreBundle\Repository;
  */
 class ProductsRepository extends \Doctrine\ORM\EntityRepository
 {
+    public function findProductsofTheDay($date) {
+        $qb = $this->createQueryBuilder('p');
+
+        return $qb->Where('p.expirationDate < :date')
+                  ->setParameter('date', $date)
+                  ->getQuery()
+                  ->getResult()
+                  ;
+    }
 }
