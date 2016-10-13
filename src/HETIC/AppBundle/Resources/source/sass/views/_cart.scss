@@ -7,16 +7,18 @@ padding-left:1%;
 color:#0c002f;
 }
 
-#output{text-align: center;
-    margin-top: 8%;
-    font-weight: Bold;
-    font-size: 2em;
-    padding-bottom: 1em;
-    border-bottom: 1px solid black;}
+#output{
+    text-align: left;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 1.5em;
+    padding-bottom: 5px;
+    color: #eb1d5d;
+}
 
 input#timelivraison {
     display: block;
-    background-color: #0c002f;
+    background-color: #eb1d5d;
     padding: 10px 0;
     border-radius: 8px;
     width: 100%;
@@ -25,99 +27,109 @@ input#timelivraison {
     color: white;
     font-weight: bold;
     font-size: 1.3em;
-    margin-top: 15px;
+    margin-top: 5px;
     border: 0;
 }
         &:hover {
             text-decoration: none;
-            
         }
 
 .adresselivraison{
-width:100%;
-    text-align: center;
-    font-style:italic;
+    width:100%;
+    text-align: left;
+    padding: 15px 10px;
+    font-size: 100;
 }
 
 .fieldsetcenter{
-    border-left: 1px solid #0c002f;
+    border-right: 1px solid #0c002f;
     height: 100%;
-    padding-left: 5%; 
-        padding-top: 2%;
+    padding-right: 10px;
 }
 
 .textepointrelais{
-padding-top:20px;
+    padding-top:20px;
+    line-height: 25px;
 }
 
-.livraison input placeholder{
-    color:#0c002f;
-    padding-left:4%;
+.livraison .col-sm-6, .livraison .col-sm-12 {
+    padding: 0 8px;
 }
 
 .livraison input{
-    padding: 0.8%;
-    width: 80%;
-    margin: 2%;
+    padding: 10px 15px;
+    width: 100%;
+    margin: 10px;
     margin-left: 0;
 }
 
 .inputstylise input{
-border:1px solid #fff02a;
+    border:1px solid #fff02a;
     padding:2%
 }
 
-.livraison input:last-child{
+.livraison input[type='submit']{
     width: 50%;
-    background-color: #fff02a;
+    background-color: #eb1d5d;
     margin-top: 40px;
     text-decoration: none;
     border-radius: 10px;
-    padding: 2%;
+    padding: 10px 20px;
     font-weight: bold;
-    color: #0c002f;
+    color: #fff;
     border: 0;
 }
 
 
 .submitadresse{
-background-color: #fff02a;
+    background-color: #eb1d5d;
     margin-top: 40px;
     text-decoration: none;
     border-radius: 10px;
-    padding: 2%;
+    padding: 10px 50px;
     font-weight: bold;
-    color:#0c002f;
-    border: 0;   
+    color: #fff;
+    border: 0;
 }
 
 main#cart {
     padding: 50px 0;
-
+    h2 {
+        font-size: 1.5em;
+        font-weight: bold;
+    }
     table {
         width: 100%;
         caption {
             color: #0c002f;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: bolder;
             font-size: 2em;
             text-align:left;
             font-weight:bold;
+            &.aside-title {
+                font-size: 1.5em;
+            }
         }
         .titregris {
            color: #979797;
             border-top: 1px solid #979797;
+            border-bottom: 1px solid #979797;
             text-align: center;
             th {
                 padding: 5px 10px;
                 text-align: center;
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 400;
                 &:first-child() {
-                    padding-left: 0;
+                    padding-left: 15px;
                     text-align: left;
                 }
             }
         }
         .list {
             text-align:left;
-            border-top: 1px solid #979797;
+            border-bottom: 1px solid #979797;
             .imageproduct {
                 display:inline-block;
                 padding-left:0%;
@@ -127,14 +139,14 @@ main#cart {
             .descriptif {
                 display:inline-block;
                 padding-left: 3%;
-             
+
                 span a.delete {
                     display:block;
                     text-align:left;
                     font-size:0.8em;
                     position: relative;
                     color:#979797;
-                 
+
                 }
             }
             td {
@@ -147,12 +159,16 @@ main#cart {
             }
         }
         .list2 {
+            background-color: #ececec;
             text-align:left;
-            
             font-weight:bold;
+            &:first-child() {
+                background-color: #fafafa;
+            }
             td {
                 padding: 10px 0;
                 font-size: 0.8em;
+                padding: 10px 15px;
             }
             .prixtotal{
                 color: #e0cf00;
@@ -167,7 +183,7 @@ main#cart {
     }
     a.btnapply {
         display: block;
-        background-color: #0c002f;
+        background-color: #eb1d5d;
         padding: 10px 0;
         border-radius: 8px;
         width: 100%;
@@ -221,11 +237,11 @@ main#cart {
 }
 
 @media screen and (max-width: 1050px) {
-    
+
 input#timelivraison {
     font-size: 1em;
-}    
-    
+}
+
 .panierdroite {
     width: 90%;
         margin-bottom: 2.5%;
@@ -257,39 +273,39 @@ input#timelivraison {
     border-top: 1px solid #0c002f;
     border-left: none;
     height: 100%;
-    padding-left: 0%; 
+    padding-left: 0%;
         padding-top: 3%;
 }
-    
+
     .modelivraison {
     padding-left: 0%;
     color: #0c002f;
     text-align: center;
 }
-    
+
     .titreadomicile {
     text-align: center;
 }
-    
+
     .livraison{
     text-align:center;
             padding-bottom: 4%;
     }
-    
+
     .fieldsetcenter {
     text-align: center;
 }
-    
+
     main#cart table .list .descriptif {
     display: block;
-    top: 0px; 
+    top: 0px;
     padding-left: 0%;
 }
-    
+
     input#timelivraison {
     font-size: 0.8em;
 }
-    
+
     .formlivraison{
         border-top: 1px solid black;
     padding-top: 5%;

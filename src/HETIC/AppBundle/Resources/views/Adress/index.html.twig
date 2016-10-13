@@ -5,36 +5,37 @@
             <div class="col-sm-12">
 
                 <h1 class="modelivraison">Mode de livraison</h1>
-                <div class="col-sm-6 ">
+                <div class="col-sm-6 fieldsetcenter">
                     <h2 class="titreadomicile">Option Livraison</h2>
 
                     <form class="livraison" method="post" action="{{path('hetic_app_confirm')}}">
-
-                       
-                        <input type="text" name="nom" id="nom" placeholder="Nom"/>
-
-                        <input type="text" name="prenom" id="prenom" placeholder="Prénom"/>
-                        <br>
-
-                        <input class="adresseinput" type="text" name="adresse" id="adresse" placeholder="Adresse"/>
-
-                        <input class="adresseinput" type="text" name="compladresse" id="compladresse" placeholder="Complément d'adresse"/>
-
-                        <input type="text" name="codepostal" id="codepostal" placeholder="Code Postal"/>
-<br>
-                        <input type="text" name="ville" id="ville" placeholder="Ville"/>
-
-<br>
+                        <div class="col-sm-6">
+                            <input type="text" name="nom" id="nom" placeholder="Nom"/>
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="text" name="prenom" id="prenom" placeholder="Prénom"/>
+                        </div>
+                        <div class="col-sm-12">
+                            <input class="adresseinput" type="text" name="adresse" id="adresse" placeholder="Adresse"/>
+                        </div>
+                        <div class="col-sm-12">
+                            <input class="adresseinput" type="text" name="compladresse" id="compladresse" placeholder="Complément d'adresse"/>
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="text" name="codepostal" id="codepostal" placeholder="Code Postal"/>
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="text" name="ville" id="ville" placeholder="Ville"/>
+                        </div>
                         <a href="{{path('hetic_app_confirm')}}"><input class="submitadresse" type="submit" name="livraison" id="livraison" value="Je me fais livrer" /></a>
-
                     </form>
                 </div>
 
-                <div class="col-sm-6 fieldsetcenter">
+                <div class="col-sm-6">
                     <h2 class="titreadomicile">Option Point relais</h2>
-                    <p class="textepointrelais">Grace au point relais vous pouvez aller chercher vous même votre commande . Vous économisez les frais de livraison avec cette option le point relais le plus proche est a moins de 10minutes de marche <br><br><b>ET vous savez quoi elle s’y trouve déja !</b></p><br>
+                    <p class="textepointrelais">Grâce au point relais vous pouvez aller chercher vous même votre commande . Vous économisez sur les frais de livraison avec cette option.</p><h4>ET vous savez quoi elle s’y trouve déja !</h4>
                     <p>TABAC LE BALZAC 3 Rue de Paris, Montreuil</p>
-                      <a href="{{path('hetic_app_confirm')}}"><input class="submitadresse" type="submit" name="pointrelais" id="pointrelais" value="Je vais chercher mon déjeuné" /></a>
+                      <a href="{{path('hetic_app_confirm')}}"><input class="submitadresse" type="submit" name="pointrelais" id="pointrelais" value="Je vais chercher mon déjeuner" /></a>
                 </div>
             </div>
         </div>
