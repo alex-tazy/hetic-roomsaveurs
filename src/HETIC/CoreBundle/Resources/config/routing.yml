@@ -17,3 +17,7 @@ hetic_core_commands:
 hetic_core_analytics:
     path:     /analytics
     defaults: { _controller: HETICCoreBundle:Analytics:index }
+    
+hetic_core_livreur:
+    path:     /livreur
+    defaults: { _controller: HETICCoreBundle:Livreur:index }    
