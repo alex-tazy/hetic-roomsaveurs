@@ -6,9 +6,9 @@
 
                 <h1 class="modelivraison">Mode de livraison</h1>
                 <div class="col-sm-6 ">
-                    <h2 class="titreadomicile">A Domicile</h2>
+                    <h2 class="titreadomicile">Option Livraison</h2>
 
-                    <form class="livraison" method="post" action="traitement.php">
+                    <form class="livraison" method="post" action="{{path('hetic_app_confirm')}}">
 
                        
                         <input type="text" name="nom" id="nom" placeholder="Nom"/>
@@ -25,16 +25,16 @@
                         <input type="text" name="ville" id="ville" placeholder="Ville"/>
 
 <br>
-                        <input class="submitadresse" type="submit" name="livraison" id="livraison" value="Je me fais livrer" />
+                        <a href="{{path('hetic_app_confirm')}}"><input class="submitadresse" type="submit" name="livraison" id="livraison" value="Je me fais livrer" /></a>
 
                     </form>
                 </div>
 
                 <div class="col-sm-6 fieldsetcenter">
-                    <h2 class="titreadomicile">Options Point relais</h2>
+                    <h2 class="titreadomicile">Option Point relais</h2>
                     <p class="textepointrelais">Grace au point relais vous pouvez aller chercher vous même votre commande . Vous économisez les frais de livraison avec cette option le point relais le plus proche est a moins de 10minutes de marche <br><br><b>ET vous savez quoi elle s’y trouve déja !</b></p><br>
                     <p>TABAC LE BALZAC 3 Rue de Paris, Montreuil</p>
-                    <input class="submitadresse" type="submit" name="pointrelais" id="pointrelais" value="Je vais chercher mon déjeuné" />
+                      <a href="{{path('hetic_app_confirm')}}"><input class="submitadresse" type="submit" name="pointrelais" id="pointrelais" value="Je vais chercher mon déjeuné" /></a>
                 </div>
             </div>
         </div>
