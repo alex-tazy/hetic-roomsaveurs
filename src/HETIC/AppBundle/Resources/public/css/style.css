@@ -6005,6 +6005,13 @@ footer {
   padding-left: 20px;
   border-left: solid 5px white; }
 
+.prix {
+  color: white;
+  position: relative;
+  top: 40%;
+  padding-left: 35%;
+  font-size: 2.5em; }
+
 .bandeau {
   height: 150px;
   background: url(../img/bon_apetit.png);
@@ -6343,7 +6350,8 @@ input#timelivraison {
   border: 0; }
 
 main#cart {
-  padding: 50px 0; }
+  padding: 50px 0;
+  height: auto; }
   main#cart h2 {
     font-size: 1.5em;
     font-weight: bold; }
