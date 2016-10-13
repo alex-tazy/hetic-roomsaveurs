@@ -4,10 +4,10 @@ namespace HETIC\AppBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
-class AdresseController extends Controller
+class AboutController extends Controller
 {
     public function indexAction()
     {
-        return $this->render('HETICAppBundle:Adresse:adresse.html.twig');
+        return $this->render('HETICAppBundle:About:index.html.twig');
     }
 }

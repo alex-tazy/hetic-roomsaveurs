@@ -4,7 +4,6 @@ footer {
     .row {
         margin: 30px auto;
         a {
-            display: block;
             text-align: center;
             .logo {
                 display: inline-block;
@@ -17,7 +16,7 @@ footer {
             ul {
                 li {
                     display: inline-block;
-                    margin-right: 20px;
+                    margin: 0 20px;
                     a {
                         color: #FFF;
                         &:hover {

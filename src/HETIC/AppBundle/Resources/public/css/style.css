@@ -5827,7 +5827,6 @@ footer {
   footer .row {
     margin: 30px auto; }
     footer .row a {
-      display: block;
       text-align: center; }
       footer .row a .logo {
         display: inline-block;
@@ -5837,7 +5836,7 @@ footer {
       text-align: center; }
       footer .row nav ul li {
         display: inline-block;
-        margin-right: 20px; }
+        margin: 0 20px; }
         footer .row nav ul li a {
           color: #FFF; }
           footer .row nav ul li a:hover {
