@@ -4,25 +4,17 @@
 </div>
 {% endfor %} {% endfor %} {% endif %} {% block header %}
 <header>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="col-md-6">
-                    <a href="{{path('hetic_app_homepage')}}">
-                        <img src="{{asset('bundles/heticapp/img/logo_RS.png')}}" alt="logo_header" class="logo">
-                    </a>
-                </div>
-                <div class="col-md-6">
-                    <ul id="menu_horizontal">
-                        <li class="bouton_gauche"><a href="#">Mon compte</a></li>
-                        <li class="bouton_gauche"><a href="#">Panier</a></li></li>
-                        <li class="bouton_gauche"><a href="#">Deconnexion</a></li>
-                                                <li class="bouton_gauche"><a href="#">Inscription</a></li>
- <img src="{{asset('bundles/heticapp/img/burger.png')}}" alt="menuburger_header" class="burger">
-                    </ul>
-                </div>
-            </div>
-        </div>
+
+    <div class="logo"><a href="{{path('hetic_app_homepage')}}">
+                            <img src="{{asset('bundles/heticapp/img/logo_RS.png')}}" alt="logo_footer" class="logo">
+                        </a></div>
+    <nav class="menu">
+        <span class="itemMenu itemMenu1"><a href="#">Se connecter</a></span>
+        <span class="itemMenu itemMenu2"><a href="#">S'inscrire</a></span>
+        <span class="itemMenu itemMenu3"><a href="#">Mon panier</a></span>
+   </nav>
+   <div class="burger-menu">
+        <div class="burger"></div>  
     </div>
 </header>
 {% endblock header %} {% block main %} {% endblock main %}
